@@ -1,0 +1,21 @@
+//
+//  Dev.xcconfig
+//  WillBank
+//
+//  Created by Victor Goncalves Valfre on 14/01/20.
+//  Copyright © 2020 Pag. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "General.xcconfig"
+
+WILL_ENVIRONMENT                        = development
+WILL_DISPLAY_NAME                       = StockMkt dev
+WILL_BASE_URL                           = bf53d88e-bffapp-bffappingr-9494-1210214602.us-east-1.elb.amazonaws.com/mobile
+WILL_HTTP_SCHEME                        = http
+
+PRODUCT_BUNDLE_IDENTIFIER               = com.oxltech.StockMkt-dev
+ASSETCATALOG_COMPILER_APPICON_NAME      = AppIcon-Dev
+//CODE_SIGN_ENTITLEMENTS                  = WillBank/Resources/Entitlements/WillBank-Dev.entitlements

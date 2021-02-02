@@ -1,0 +1,21 @@
+//
+//  Prod.xcconfig
+//  WillBank
+//
+//  Created by Marcio Garcia on 09/10/20.
+//  Copyright © 2020 Pag. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "General.xcconfig"
+
+WILL_ENVIRONMENT                        = production
+WILL_DISPLAY_NAME                       = StockMkt
+WILL_BASE_URL                           = app-02d9c8-prod.owill.com.br/mobile
+WILL_HTTP_SCHEME                        = https
+
+PRODUCT_BUNDLE_IDENTIFIER               = com.oxltech.StockMkt
+ASSETCATALOG_COMPILER_APPICON_NAME      = AppIcon
+//CODE_SIGN_ENTITLEMENTS                  = WillBank/Resources/Entitlements/WillBank.entitlements

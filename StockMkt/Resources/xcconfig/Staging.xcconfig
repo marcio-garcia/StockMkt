@@ -1,0 +1,21 @@
+//
+//  Hmg.xcconfig
+//  WillBank
+//
+//  Created by Victor Goncalves Valfre on 14/01/20.
+//  Copyright © 2020 Pag. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "General.xcconfig"
+
+WILL_ENVIRONMENT                        = staging
+WILL_DISPLAY_NAME                       = StockMkt stg
+WILL_BASE_URL                           = app-5dbdfc-hml.owill.com.br/mobile
+WILL_HTTP_SCHEME                        = https
+
+PRODUCT_BUNDLE_IDENTIFIER               = com.oxltech.StockMkt-stg
+ASSETCATALOG_COMPILER_APPICON_NAME      = AppIcon-Stg
+//CODE_SIGN_ENTITLEMENTS                  = WillBank/Resources/Entitlements/WillBank-Stg.entitlements

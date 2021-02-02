@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Ivorywhite",
+        "repositoryURL": "https://github.com/marcio-garcia/Ivorywhite.git",
+        "state": {
+          "branch": "features/spm",
+          "revision": "a4a05f2395edd1fc074d74b73454beba73e14fae",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

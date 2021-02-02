@@ -1,0 +1,22 @@
+//
+//  General.xcconfig
+//  WillBank
+//
+//  Created by Marcio Garcia on 12/11/20.
+//  Copyright © 2020 Will. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+WILL_APP_VERSION                        = 0.0.1
+WILL_BUILD_NUMBER                       = 1
+
+//SWIFT_OBJC_BRIDGING_HEADER              = WillBank/ObjC_Bridge.h
+ENABLE_BITCODE                          = NO
+//EXCLUDED_ARCHS[sdk=iphonesimulator*]    = arm64
+//ONLY_ACTIVE_ARCH                        = YES
+CODE_SIGN_IDENTITY                      = Apple Development
+CODE_SIGN_STYLE                         = Automatic
+DEVELOPMENT_TEAM                        = 466546777M
+DEBUG_INFORMATION_FORMAT                = dwarf-with-dsym
