@@ -68,13 +68,13 @@ let appResources: [FileElement] = [
 //    .glob(pattern: "\(appName)/**/*.xib"),
     .glob(pattern: "\(appName)/**/*.storyboard"),
 
-//    .glob(pattern: "\(appName)/Resources/*.lproj/*"),
+    .glob(pattern: "\(appName)/Resources/*.lproj/*"),
     .glob(pattern: "\(appName)/Resources/xcconfig/General.xcconfig"),
 //    .glob(pattern: "\(appName)/Resources/Entitlements/**"),
 //    .glob(pattern: "\(appName)/Resources/Font/**"),
 //    .glob(pattern: "\(appName)/Resources/Firebase/**"),
 
-    .folderReference(path: "\(appName)/Assets.xcassets"),
+    .folderReference(path: "\(appName)/Resources/Assets.xcassets"),
 ]
 
 let testResources: [FileElement] = [
