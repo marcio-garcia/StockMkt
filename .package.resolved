@@ -2,12 +2,39 @@
   "object": {
     "pins": [
       {
+        "package": "Charts",
+        "repositoryURL": "https://github.com/danielgindi/Charts.git",
+        "state": {
+          "branch": "master",
+          "revision": "b8dba5930f293277d40ea4fb7b09af76a688ce44",
+          "version": null
+        }
+      },
+      {
         "package": "Ivorywhite",
         "repositoryURL": "https://github.com/marcio-garcia/Ivorywhite.git",
         "state": {
           "branch": "features/spm",
           "revision": "a4a05f2395edd1fc074d74b73454beba73e14fae",
           "version": null
+        }
+      },
+      {
+        "package": "swift-algorithms",
+        "repositoryURL": "https://github.com/apple/swift-algorithms",
+        "state": {
+          "branch": null,
+          "revision": "bb3bafeca0e164ece3403a9de646b7d38c07dd49",
+          "version": "0.0.2"
+        }
+      },
+      {
+        "package": "swift-numerics",
+        "repositoryURL": "https://github.com/apple/swift-numerics",
+        "state": {
+          "branch": null,
+          "revision": "6b24333510e9044cf4716a07bed65eeed6bc6393",
+          "version": "0.0.8"
         }
       }
     ]

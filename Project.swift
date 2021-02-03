@@ -84,12 +84,14 @@ let testResources: [FileElement] = [
 // MARK: - Dependencies
 
 let appDependencies: [TargetDependency] = [
-    .package(product: "Ivorywhite")
+    .package(product: "Ivorywhite"),
+    .package(product: "Charts")
 ]
 
 let appPackages: [Package] = [
 //    .package(url: "https://bitbucket.org/will-bank/will-ios-network.git", .upToNextMajor(from: Version(string: "0.1.2")!)),
-    .package(url: "https://github.com/marcio-garcia/Ivorywhite.git", .branch("features/spm"))
+    .package(url: "https://github.com/marcio-garcia/Ivorywhite.git", .branch("features/spm")),
+    .package(url: "https://github.com/danielgindi/Charts.git", .branch("master"))
 ]
 
 // MARK: - Additional Files
