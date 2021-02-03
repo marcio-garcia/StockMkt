@@ -93,3 +93,6 @@ iOSInjectionProject/
 # Tuist
 Derived
 
+# Api Token file
+StockApiToken.xcconfig
+

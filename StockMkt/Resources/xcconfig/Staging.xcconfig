@@ -10,10 +10,11 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 #include "General.xcconfig"
+#include "StockApiToken.xcconfig"
 
 WILL_ENVIRONMENT                        = staging
 WILL_DISPLAY_NAME                       = StockMkt stg
-WILL_BASE_URL                           = app-5dbdfc-hml.owill.com.br/mobile
+WILL_BASE_URL                           = sandbox.iexapis.com
 WILL_HTTP_SCHEME                        = https
 
 PRODUCT_BUNDLE_IDENTIFIER               = com.oxltech.StockMkt-stg

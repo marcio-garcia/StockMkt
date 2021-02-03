@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(WILL_APP_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(WILL_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
@@ -43,5 +43,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>BaseUrl</key>
+	<string>$(WILL_BASE_URL)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(WILL_DISPLAY_NAME)</string>
+	<key>Environment</key>
+	<string>$(WILL_ENVIRONMENT)</string>
+	<key>HttpScheme</key>
+	<string>$(WILL_HTTP_SCHEME)</string>
+	<key>ApiToken</key>
+	<string>$(WILL_API_TOKEN)</string>
 </dict>
 </plist>
