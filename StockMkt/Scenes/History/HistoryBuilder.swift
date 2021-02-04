@@ -19,11 +19,12 @@ class HistoryBuilder {
     }
     
     func build() -> HistoryViewController {
-        let interactor = HistoryInteractor()
+        let interactor = HistoryInteractor(api: api)
         let router = HistoryRouter(dataStore: interactor)
         let viewController = HistoryViewController(interactor: interactor)
         router.viewController = viewController
-
+        interactor.viewController = viewController
+        
         return viewController
     }
 }

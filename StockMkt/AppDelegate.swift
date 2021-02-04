@@ -29,8 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let ivorywhite = Ivorywhite.shared.service(debugMode: networkConfiguration.debugMode)
         let networkService = StockNerworkService(apiConfiguration: networkConfiguration, networkService: ivorywhite)
-        //let rootViewController = ViewController(api: networkService)
-        let rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+        let rootViewController = HistoryBuilder(api: networkService).build()
         navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController?.navigationBar.backgroundColor = .white
         window = UIWindow()

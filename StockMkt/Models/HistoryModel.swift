@@ -8,6 +8,10 @@
 
 import Foundation
 
-struct HistoryModel {
-    
+typealias HistoryModel = [HistoryModelElement]
+
+struct HistoryModelElement {
+    let ticket: String
+    let close: Double
+    let date: Date
 }

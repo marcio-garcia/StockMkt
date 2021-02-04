@@ -22,16 +22,37 @@ protocol HistoryDataStore {
 class HistoryInteractor: HistoryBusinessLogic, HistoryDataStore {
 
     // MARK: Object lifecycle
-    
-    init() {
+
+    var api: StockApi
+    var viewController: HistoryViewController?
+
+    init(api: StockApi) {
+        self.api = api
     }
 
     // MARK: Fetch data
   
     func fetchHistory() {
+        api.requestHistory(ticket: "msft", period: "1y") { response, error in
+            guard let history = response else {
+                return
+            }
+            let historyModel = self.convertResponseToModel(response: history)
+            self.viewController?.displayHistory(historyModel)
+        }
         //performRequest(page: page, authorsPerPage: authorsFirstPage)
     }
-    
+
+    private func convertResponseToModel(response: HistoryResponse) -> HistoryModel {
+        let model = response.compactMap { (responseElement) -> HistoryModelElement? in
+            if let date = Date.date(from: responseElement.date, format: "yyyy-MM-dd") {
+                return HistoryModelElement(ticket: responseElement.symbol, close: responseElement.close, date: date)
+            }
+            return nil
+        }
+        return model
+    }
+
     private func performRequest(page: Int, authorsPerPage: Int?) {
 //        worker.requestAuthors(page: page, authorsPerPage: authorsPerPage) { [weak self] authors, error in
 //            if let _error = error {

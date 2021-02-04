@@ -48,6 +48,7 @@ class HistoryViewController: UIViewController, HistoryDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "History"
+        view.backgroundColor = .white
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         fetchHistory()
     }
@@ -61,6 +62,9 @@ class HistoryViewController: UIViewController, HistoryDisplayLogic {
     // MARK: HistoryDisplayLogic
     
     func displayHistory(_ history: HistoryModel) {
+        DispatchQueue.main.async {
+            self.title = history.first?.ticket ?? "History"
+        }
         contentView?.updateHistory(history: history)
     }
 
