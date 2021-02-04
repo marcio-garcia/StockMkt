@@ -5,7 +5,7 @@ import ProjectDescription
 let appName = "StockMkt"
 let organizationName = "Oxltech"
 let bundleIdPrefix = "com.oxltech"
-let deploymentVersion = "10.0"
+let deploymentVersion = "11.0"
 
 // MARK: - Build Settings
 
